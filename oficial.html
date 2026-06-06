@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Fabi Bot | O Bot de WhatsApp Mais Completo do Brasil | Golds, Músicas, IA, Jogos</title>
+    
+    <!-- SEO MEGA OTIMIZADO -->
+    <meta name="description" content="Fabi Bot é o bot de WhatsApp mais completo do Brasil! Figurinhas automáticas, download de músicas/vídeos, IA integrada, sistema de Golds exclusivo, rankings, jogos e muito mais. Mais de 10.000 usuários ativos!">
+    <meta name="keywords" content="Fabi Bot, bot whatsapp, bot para whatsapp, bot de whatsapp grátis, sistema golds whatsapp, tigrinho whatsapp, baixar música whatsapp, figurinhas whatsapp automático, IA no whatsapp, ranking whatsapp, automação whatsapp, bot de grupos">
+    <meta name="author" content="Fabi Bot">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Fabi Bot - O Bot de WhatsApp Mais Completo do Brasil">
+    <meta property="og:description" content="🎮 Sistema de Golds • 🎵 Download de Músicas • 🤖 IA Integrada • 🐯 Tigrinho • 🏆 Rankings • Grátis!">
+    <meta property="og:image" content="http://br2.bronxyshost.com:4009/flogo.jpg">
+    <meta property="og:url" content="http://br2.bronxyshost.com:4009">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Fabi Bot">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fabi Bot - O Bot de WhatsApp Mais Completo">
+    <meta name="twitter:description" content="Sistema de Golds, Músicas, IA, Jogos e muito mais!">
+    <meta name="twitter:image" content="http://br2.bronxyshost.com:4009/flogo.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://br2.bronxyshost.com:4009">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="http://br2.bronxyshost.com:4009/flogo.jpg">
+    <link rel="apple-touch-icon" href="http://br2.bronxyshost.com:4009/flogo.jpg">
+    
+    <!-- Schema.org para Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Fabi Bot",
+        "applicationCategory": "CommunicationApplication",
+        "operatingSystem": "WhatsApp",
+        "description": "Bot completo para WhatsApp com sistema de Golds, download de músicas, IA integrada, jogos e rankings.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+        },
+        "creator": {
+            "@type": "Person",
+            "name": "Cabral"
+        }
+    }
+    </script>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== RESET E VARIÁVEIS ===== */
+        :root {
+            --primary: #25D366;
+            --primary-dark: #128C7E;
+            --primary-light: #DCF8C6;
+            --secondary: #8B5CF6;
+            --secondary-dark: #6D28D9;
+            --accent: #F59E0B;
+            --accent-dark: #D97706;
+            --danger: #EF4444;
+            --success: #10B981;
+            --dark: #111827;
+            --darker: #0F172A;
+            --light: #F9FAFB;
+            --gray: #6B7280;
+            --gray-light: #9CA3AF;
+            --card-bg: rgba(31, 41, 55, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-glow: 0 0 30px rgba(37, 211, 102, 0.3);
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== BACKGROUND ANIMADO ===== */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bg-animation::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 20% 50%, rgba(37, 211, 102, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+            animation: bgPulse 15s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { transform: translate(-10%, -10%) rotate(0deg); }
+            50% { transform: translate(10%, 10%) rotate(5deg); }
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', monospace;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(17, 24, 39, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(17, 24, 39, 0.98);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--primary);
+        }
+
+        .btn-nav-login {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 0.6rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 600;
+        }
+
+        .btn-nav-login:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+            color: white;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 0 4rem;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(37, 211, 102, 0.1);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(37, 211, 102, 0.3);
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--gray-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--gray-light);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45%;
+            max-width: 500px;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-header p {
+            color: var(--gray-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-description {
+            color: var(--gray-light);
+            font-size: 0.875rem;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .how-it-works {
+            padding: 5rem 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .step {
+            position: relative;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0 auto 1rem;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-description {
+            color: var(--gray-light);
+            font-size: 0.875rem;
+        }
+
+        /* ===== PRICING SECTION ===== */
+        .pricing {
+            padding: 5rem 0;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card.popular {
+            border: 2px solid var(--primary);
+            transform: scale(1.02);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: var(--dark);
+            padding: 0.25rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .pricing-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price small {
+            font-size: 0.875rem;
+            color: var(--gray-light);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: var(--gray-light);
+        }
+
+        .pricing-features i {
+            color: var(--primary);
+            margin-right: 0.5rem;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            padding: 5rem 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--gray-light);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+        }
+
+        .testimonial-role {
+            font-size: 0.75rem;
+            color: var(--gray-light);
+        }
+
+        /* ===== FAQ SECTION ===== */
+        .faq {
+            padding: 5rem 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--gray-light);
+            font-size: 0.875rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            margin-top: 1rem;
+        }
+
+        .faq-item.active i {
+            transform: rotate(180deg);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta {
+            padding: 5rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(37, 211, 102, 0.1), rgba(139, 92, 246, 0.1));
+        }
+
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: var(--gray-light);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            padding: 4rem 0 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .footer-links a {
+            display: block;
+            color: var(--gray-light);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--gray-light);
+            font-size: 0.875rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--dark);
+                flex-direction: column;
+                justify-content: center;
+                transition: left 0.3s ease;
+                z-index: 999;
+            }
+            
+            .nav.active {
+                left: 0;
+            }
+            
+            .hero-stats {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                display: none;
+            }
+            
+            .hero-content {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="logo-text">Fabi<span>Bot</span></div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="nav" id="nav">
+                    <a href="#home">Início</a>
+                    <a href="#features">Recursos</a>
+                    <a href="#how-it-works">Como Funciona</a>
+                    <a href="#pricing">Planos</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#cta" class="btn-nav-login">Começar Agora</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-crown"></i> Mais de 10.000 usuários ativos
+                </div>
+                <h1 class="hero-title">O Bot de WhatsApp<br><span class="gradient-text">Mais Completo do Brasil</span></h1>
+                <p class="hero-description">
+                    Figurinhas automáticas, download de músicas e vídeos, IA integrada, 
+                    sistema de Golds exclusivo, rankings competitivos e jogos emocionantes. 
+                    Tudo em um só lugar!
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Usuários Ativos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Grupos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Comandos/dia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.8</div>
+                        <div class="stat-label">Avaliação ⭐</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="http://br2.bronxyshost.com:4009" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Acessar o Sistema
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Saiba Mais
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <i class="fab fa-whatsapp" style="font-size: 20rem; opacity: 0.1;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos <span class="gradient-text">Incríveis</span></h2>
+                <p>Tudo que você precisa para transformar seu grupo do WhatsApp</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="feature-title">Sistema de Golds</h3>
+                    <p class="feature-description">Moeda virtual exclusiva! Ganhe Golds por atividade, troque por vantagens, dispute rankings e muito mais. Economia interna completa.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="feature-title">Download Músicas/Vídeos</h3>
+                    <p class="feature-description">Baixe músicas e vídeos do YouTube, TikTok, Instagram e outras plataformas. Qualidade alta e rápido!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Inteligência Artificial</h3>
+                    <p class="feature-description">IA integrada para conversas inteligentes, respostas automáticas e interações naturais com os membros.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h3 class="feature-title">Figurinhas Automáticas</h3>
+                    <p class="feature-description">Crie figurinhas de imagens, vídeos e GIFs automaticamente. Comando fácil e rápido!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="feature-title">Jogos e Tigrinho</h3>
+                    <p class="feature-description">Tigrinho com multiplicador de até 59x, roletas e jogos exclusivos para entreter o grupo.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="feature-title">Rankings Competitivos</h3>
+                    <p class="feature-description">Rankings diários, semanais e mensais. Quem mais Golds? Quem mais ativo? Competição saudável!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Mercado de Ativos</h3>
+                    <p class="feature-description">Invista seus Golds em ativos virtuais com valores atualizados em tempo real. Compre e venda como na bolsa!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Moderação Automática</h3>
+                    <p class="feature-description">Anti-link, anti-spam, anti-fake, bloqueio de conteúdo impróprio. Seu grupo sempre seguro!</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="feature-title">Sistema de Níveis</h3>
+                    <p class="feature-description">Evolua seu nível conforme ganha Golds. Desbloqueie conquistas e vantagens exclusivas!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Como <span class="gradient-text">Funciona</span></h2>
+                <p>Em apenas 3 passos você já está dentro da maior comunidade de bots do Brasil</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Faça Login</div>
+                    <div class="step-description">Acesse o sistema com sua conta Google. Rápido, seguro e gratuito!</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Escolha seu Grupo</div>
+                    <div class="step-description">Escolha um grupo para adicionar a Fabi Bot ou crie seu próprio grupo.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Divirta-se!</div>
+                    <div class="step-description">Use os comandos, ganhe Golds, jogue e veja seu grupo crescer!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planos <span class="gradient-text">Gratuitos</span></h2>
+                <p>Sim, 100% gratuito! Sem pegadinhas, sem taxas escondidas.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="pricing-title">Gratuito</div>
+                    <div class="pricing-price">R$ 0,00</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Todos os comandos básicos</li>
+                        <li><i class="fas fa-check"></i> Sistema de Golds</li>
+                        <li><i class="fas fa-check"></i> Download de músicas</li>
+                        <li><i class="fas fa-check"></i> Figurinhas automáticas</li>
+                        <li><i class="fas fa-check"></i> Acesso ao ranking</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">MAIS POPULAR</div>
+                    <div class="pricing-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="pricing-title">Premium</div>
+                    <div class="pricing-price">R$ 0,00</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tudo do plano gratuito</li>
+                        <li><i class="fas fa-check"></i> IA avançada</li>
+                        <li><i class="fas fa-check"></i> Jogos exclusivos</li>
+                        <li><i class="fas fa-check"></i> Mercado de ativos</li>
+                        <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="pricing-title">VIP</div>
+                    <div class="pricing-price">R$ 0,00</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tudo do plano Premium</li>
+                        <li><i class="fas fa-check"></i> Benefícios exclusivos</li>
+                        <li><i class="fas fa-check"></i> Destaque no ranking</li>
+                        <li><i class="fas fa-check"></i> Consultoria personalizada</li>
+                        <li><i class="fas fa-check"></i> Emblema de VIP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que <span class="gradient-text">dizem</span> sobre nós</h2>
+                <p>Depoimentos de usuários reais</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"A Fabi Bot transformou completamente meu grupo! O sistema de Golds deixou todo mundo mais engajado. Recomendo demais!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="testimonial-name">Carlos Silva</div>
+                            <div class="testimonial-role">Administrador de Grupo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Melhor bot do WhatsApp! O Tigrinho é viciante e os rankings motivam todo mundo a participar. Já indiquei para vários amigos!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="testimonial-name">Mariana Santos</div>
+                            <div class="testimonial-role">Membro Ativo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"O suporte é incrível e as funcionalidades são completas. Consigo baixar músicas, criar figurinhas e ainda moderar o grupo automaticamente!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="testimonial-name">Rafael Oliveira</div>
+                            <div class="testimonial-role">Dono de Grupo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas <span class="gradient-text">Frequentes</span></h2>
+                <p>Tire suas dúvidas sobre a Fabi Bot</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🔹 A Fabi Bot é realmente gratuita?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! 100% gratuita. Sem pegadinhas, sem taxas escondidas. Todos os recursos são liberados.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🔹 Como adicionar a Fabi Bot no meu grupo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Basta acessar o sistema, fazer login e clicar em "Adicionar ao Grupo". Você será redirecionado para o WhatsApp.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🔹 Quais comandos a Fabi Bot tem?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Comandos para músicas, figurinhas, Golds, jogos, ranking, moderação e muito mais. Use &menu no grupo para ver todos.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🔹 Preciso de conhecimento técnico?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Não! A Fabi Bot é fácil de usar. Apenas adicione ao grupo e comece a usar os comandos.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🔹 A Fabi Bot funciona em qualquer grupo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Funciona em qualquer grupo do WhatsApp, desde que você tenha permissão para adicionar bots.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🔹 Como ganhar Golds?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Participando ativamente do grupo! Cada mensagem, interação e comando gera Golds. Também dá para ganhar nos jogos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Pronto para <span class="gradient-text">transformar</span> seu grupo?</h2>
+            <p>Junte-se a milhares de usuários que já estão utilizando a Fabi Bot e veja a diferença!</p>
+            <div class="cta-buttons">
+                <a href="http://br2.bronxyshost.com:4009" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Acessar Sistema
+                </a>
+                <a href="#features" class="btn btn-outline">
+                    <i class="fas fa-play-circle"></i> Ver Demonstração
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <div class="logo-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="logo-text">Fabi<span>Bot</span></div>
+                    </div>
+                    <p>O bot de WhatsApp mais completo do Brasil.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#home">Início</a>
+                    <a href="#features">Recursos</a>
+                    <a href="#how-it-works">Como Funciona</a>
+                    <a href="#pricing">Planos</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fabi Bot - Todos os direitos reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart" style="color: var(--primary);"></i> por Cabral</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===== MOBILE MENU =====
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // ===== SCROLL HEADER =====
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // ===== FAQ ACCORDION =====
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    nav.classList.remove('active');
+                }
+            });
+        });
+        
+        // ===== ANIMAÇÃO AO SCROLL =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.feature-card, .pricing-card, .testimonial-card, .step').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // ===== CONTADORES =====
+        function animateCounter(element, target, suffix = '') {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString() + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString() + suffix;
+                }
+            }, 30);
+        }
+        
+        // Animar contadores quando visíveis
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = [
+                        { el: document.querySelector('.hero-stats .stat-item:first-child .stat-number'), target: 10000, suffix: '+' },
+                        { el: document.querySelector('.hero-stats .stat-item:nth-child(2) .stat-number'), target: 500, suffix: '+' },
+                        { el: document.querySelector('.hero-stats .stat-item:nth-child(3) .stat-number'), target: 1000000, suffix: '+' },
+                        { el: document.querySelector('.hero-stats .stat-item:nth-child(4) .stat-number'), target: 48, suffix: '' }
+                    ];
+                    
+                    numbers.forEach(stat => {
+                        if (stat.el && stat.el.textContent.includes('K+') === false) {
+                            animateCounter(stat.el, stat.target, stat.suffix);
+                        }
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+        
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) statsObserver.observe(heroStats);
+        
+        // ===== PREVIEW DO NÚMERO =====
+        const statNumbers = document.querySelectorAll('.hero-stats .stat-number');
+        statNumbers.forEach(el => {
+            if (el.textContent.includes('K+')) {
+                const num = parseInt(el.textContent);
+                animateCounter(el, num, '+');
+            }
+        });
+    </script>
+</body>
+</html>
